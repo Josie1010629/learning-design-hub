@@ -68,7 +68,7 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-9 md:flex">
           {navItems.map((item) =>
-            renderItem(item, "text-sm font-medium text-foreground/75 transition hover:text-primary"),
+            renderItem(item, "text-sm font-sans font-medium text-foreground/75 transition hover:text-primary"),
           )}
         </nav>
 
@@ -85,7 +85,7 @@ export function SiteHeader() {
         <div className="border-t border-border bg-background md:hidden">
           <nav className="container-narrow flex flex-col py-3">
             {navItems.map((item) =>
-              renderItem(item, "py-2 text-left text-sm font-medium text-foreground/80"),
+              renderItem(item, "py-2 text-left font-sans text-sm font-medium text-foreground/80"),
             )}
           </nav>
         </div>

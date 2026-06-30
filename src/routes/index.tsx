@@ -33,20 +33,11 @@ function HomePage() {
               Liangjie Jin
             </h1>
 
-            <p className="mt-7 max-w-[580px] text-[1.375rem] font-normal leading-[1.5] text-foreground/85 sm:text-[1.5rem] md:max-w-[640px] md:text-[1.75rem] lg:text-[1.875rem]">
+            <p className="mt-7 max-w-[580px] font-serif text-[1.375rem] font-normal leading-[1.5] text-foreground/85 sm:text-[1.5rem] md:max-w-[640px] md:text-[1.75rem] lg:text-[1.875rem]">
               I am a learning designer, researcher, and innovator{" "}
               <br className="hidden sm:block" />
               using AI-empowered design to create engaging, inclusive, and evidence-based learning experiences.
             </p>
-
-            <div className="mt-9">
-              <Link
-                to="/projects"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-[color:var(--color-deep)]"
-              >
-                View Projects <ArrowRight size={16} />
-              </Link>
-            </div>
           </div>
 
           <div className="md:col-span-5">
