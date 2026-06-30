@@ -162,10 +162,13 @@ function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="eyebrow">Contact</p>
             <h2 className="mt-3 font-serif text-[1.75rem] text-foreground md:text-[2rem]">
-              Let's talk about learning.
+              Let's build learning that works.
             </h2>
-            <p className="mt-4 text-muted-foreground">
-              Open to learning design, instructional design, and learning research opportunities.
+            <p className="mt-5 text-[1.0625rem] leading-[1.75] text-muted-foreground">
+              I'm open to roles and collaborations in learning design, instructional design, and learning research.
+            </p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              For opportunities, collaborations, or portfolio inquiries, email is the best way to reach me.
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -175,8 +178,9 @@ function HomePage() {
               >
                 <Mail size={16} /> Email Me
               </a>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin size={14} /> Cambridge, Massachusetts
+              <div className="flex flex-col items-center gap-1 text-sm text-muted-foreground sm:items-start">
+                <a href="mailto:jinliangjie002@gmail.com" className="hover:text-primary">jinliangjie002@gmail.com</a>
+                <span>617-685-1473</span>
               </div>
             </div>
           </div>
