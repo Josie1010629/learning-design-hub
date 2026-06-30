@@ -104,7 +104,7 @@ function CaseStudyPage() {
 
             <Block id="process" title="Process">
               <ol className="space-y-3">
-                {project.process.map((step, i) => (
+                {project.process.map((step: string, i: number) => (
                   <li key={i} className="flex gap-3">
                     <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[11px] font-semibold text-primary">
                       {i + 1}
@@ -117,13 +117,13 @@ function CaseStudyPage() {
 
             <Block id="decisions" title="Key Design Decisions">
               <ul className="list-disc space-y-2 pl-5 text-foreground/85 marker:text-primary">
-                {project.decisions.map((d, i) => <li key={i}>{d}</li>)}
+                {project.decisions.map((d: string, i: number) => <li key={i}>{d}</li>)}
               </ul>
             </Block>
 
             <Block id="result" title="Result">
               <ul className="list-disc space-y-2 pl-5 text-foreground/85 marker:text-primary">
-                {project.result.map((r, i) => <li key={i}>{r}</li>)}
+                {project.result.map((r: string, i: number) => <li key={i}>{r}</li>)}
               </ul>
             </Block>
 
