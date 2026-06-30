@@ -62,7 +62,7 @@ function HomePage() {
                 <img
                   src={portraitAsset.url}
                   alt="Portrait of Liangjie Jin"
-                  className="block h-full w-full object-cover object-top"
+                  className="block h-full w-full object-cover object-[center_22%]"
                   loading="eager"
                 />
               </div>
