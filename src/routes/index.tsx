@@ -27,23 +27,14 @@ function HomePage() {
       <section className="container-narrow pt-14 pb-20 md:pt-24 md:pb-28">
         <div className="grid items-center gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-7">
-            <p className="font-serif text-sm italic text-primary/80">Hello, I'm</p>
+            <p className="font-serif text-[1.25rem] font-medium italic text-muted-foreground md:text-[1.5rem]">
+              Hello, I'm
+            </p>
             <h1 className="mt-2 font-serif text-[2.25rem] leading-[1.1] tracking-tight text-foreground sm:text-[2.6rem] md:text-[3rem]">
               Liangjie Jin
             </h1>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              {POSITIONING.map((l) => (
-                <span
-                  key={l}
-                  className="rounded-full border border-[color:var(--color-sage)] bg-[color:var(--color-sage)]/40 px-3 py-1 text-[0.72rem] font-medium tracking-wide text-[color:var(--color-deep)]"
-                >
-                  {l}
-                </span>
-              ))}
-            </div>
-
-            <p className="mt-7 max-w-[580px] text-[1.5rem] font-semibold leading-[1.35] tracking-tight text-foreground sm:text-[1.75rem] md:max-w-[640px] md:text-[2rem]">
+            <p className="mt-7 max-w-[580px] text-[1.375rem] font-normal leading-[1.45] text-foreground/90 sm:text-[1.5rem] md:max-w-[640px] md:text-[1.75rem] lg:text-[1.875rem]">
               I am a learning designer, researcher, and innovator{" "}
               <br className="hidden sm:block" />
               using AI-empowered design to create engaging, inclusive, and evidence-based learning experiences.
