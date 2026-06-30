@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const ABOUT_TAGS = ["Learning Science", "AI-Empowered Learning", "Evaluation & Research"];
+const ABOUT_TAGS = ["Learning Experience Design", "AI-Empowered Learning", "Data-Informed Evaluation"];
 
 function HomePage() {
   return (
@@ -85,7 +85,7 @@ function HomePage() {
             <p className="eyebrow">About</p>
             <h2 className="mt-3 font-serif text-[1.75rem] text-foreground md:text-[2rem]">About Me</h2>
             <p className="mt-7 text-[1.0625rem] leading-[1.8] text-foreground/85">
-              I am a Learning Designer with a background in Learning Design, Innovation, Technology, and Psychology with Education. My work bridges learning science, user needs, and emerging technology to create clear, inclusive, and evidence-based learning experiences. Across curriculum design, interactive learning products, AI-supported experiences, and evaluation frameworks, I focus on designing meaningful opportunities for practice, feedback, and growth.
+              I am a Learning Designer who creates learner-centered experiences grounded in learning science, user needs, and emerging technology. My work includes interactive learning products, curriculum materials, AI-supported learning experiences, and evaluation frameworks. Across projects, I focus on making complex ideas clear, inclusive, and engaging through thoughtful design, meaningful practice, and effective feedback.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2">
               {ABOUT_TAGS.map((t) => (
