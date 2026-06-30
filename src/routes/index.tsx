@@ -44,11 +44,13 @@ function HomePage() {
               ))}
             </div>
 
-            <p className="mt-7 max-w-xl text-[1.0625rem] leading-[1.7] text-foreground/85">
-              I am a learning designer, researcher, and innovator using AI-empowered design to create engaging, inclusive, and evidence-based learning experiences.
+            <p className="mt-7 max-w-[580px] text-[1.5rem] font-semibold leading-[1.35] tracking-tight text-foreground sm:text-[1.75rem] md:max-w-[640px] md:text-[2rem]">
+              I am a learning designer, researcher, and innovator{" "}
+              <br className="hidden sm:block" />
+              using AI-empowered design to create engaging, inclusive, and evidence-based learning experiences.
             </p>
 
-            <div className="mt-8">
+            <div className="mt-9">
               <Link
                 to="/projects"
                 className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-[color:var(--color-deep)]"
@@ -59,26 +61,20 @@ function HomePage() {
           </div>
 
           <div className="md:col-span-5">
-            <div className="relative mx-auto aspect-square w-full max-w-[360px]">
-              {/* soft green circle */}
+            <div className="relative mx-auto aspect-square w-full max-w-[400px]">
+              {/* soft green circular frame */}
               <div
                 aria-hidden
-                className="absolute inset-0 rounded-full"
-                style={{
-                  background:
-                    "radial-gradient(circle at 50% 50%, var(--color-sage) 0%, var(--color-sage) 55%, color-mix(in oklab, var(--color-sage) 60%, transparent) 75%, transparent 78%)",
-                }}
+                className="absolute inset-0 rounded-full bg-[color:var(--color-sage)] shadow-[0_28px_70px_-36px_rgba(23,63,53,0.35)]"
               />
-              {/* portrait */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative h-[88%] w-[72%] overflow-hidden rounded-[10px] border border-border bg-card shadow-[0_24px_60px_-32px_rgba(23,63,53,0.45)]">
-                  <img
-                    src={portraitAsset.url}
-                    alt="Portrait of Liangjie Jin"
-                    className="block h-full w-full object-cover object-top"
-                    loading="eager"
-                  />
-                </div>
+              {/* circular portrait embedded in the green ring */}
+              <div className="absolute inset-[22px] overflow-hidden rounded-full border-[3px] border-background/90 sm:inset-[28px] md:inset-[30px]">
+                <img
+                  src={portraitAsset.url}
+                  alt="Portrait of Liangjie Jin"
+                  className="block h-full w-full object-cover object-top"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
