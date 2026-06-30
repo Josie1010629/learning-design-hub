@@ -45,7 +45,7 @@ function HomePage() {
             </div>
 
             <p className="mt-7 max-w-[580px] text-[1.5rem] font-semibold leading-[1.35] tracking-tight text-foreground sm:text-[1.75rem] md:text-[2.125rem]">
-              I am a learning designer, researcher, and innovator
+              I am a learning designer, researcher, and innovator{" "}
               <br className="hidden sm:block" />
               using AI-empowered design to create engaging, inclusive, and evidence-based learning experiences.
             </p>
