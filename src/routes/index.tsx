@@ -34,7 +34,7 @@ function HomePage() {
               Liangjie Jin
             </h1>
 
-            <p className="mt-7 max-w-[580px] text-[1.375rem] font-normal leading-[1.45] text-foreground/90 sm:text-[1.5rem] md:max-w-[640px] md:text-[1.75rem] lg:text-[1.875rem]">
+            <p className="mt-7 max-w-[580px] text-[1.375rem] font-normal leading-[1.5] text-foreground/85 sm:text-[1.5rem] md:max-w-[640px] md:text-[1.75rem] lg:text-[1.875rem]">
               I am a learning designer, researcher, and innovator{" "}
               <br className="hidden sm:block" />
               using AI-empowered design to create engaging, inclusive, and evidence-based learning experiences.
