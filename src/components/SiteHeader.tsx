@@ -10,7 +10,7 @@ type NavItem =
 const navItems: NavItem[] = [
   { label: "Projects", kind: "route", to: "/projects" },
   { label: "Resume", kind: "external", href: "/resume.pdf" },
-  { label: "About", kind: "hash", hash: "about" },
+  { label: "Education", kind: "hash", hash: "education" },
   { label: "Contact", kind: "hash", hash: "contact" },
 ];
 
@@ -62,7 +62,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="container-narrow flex h-16 items-center justify-between">
-        <Link to="/" className="font-serif text-[1.05rem] font-bold tracking-tight text-foreground">
+        <Link to="/" className="font-script text-[1.75rem] leading-none tracking-tight text-[color:var(--color-deep)]">
           Liangjie Jin
         </Link>
 
