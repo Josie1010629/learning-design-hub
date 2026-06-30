@@ -122,7 +122,7 @@ function HomePage() {
       </section>
 
       {/* EDUCATION */}
-      <section id="education" className="py-20 md:py-28">
+      <section id="education" className="bg-surface py-20 md:py-28">
         <div className="container-narrow grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
             <p className="eyebrow">Education</p>
@@ -149,7 +149,7 @@ function HomePage() {
                   <h3 className="font-serif text-[1.05rem] text-foreground">{e.school}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{e.degree}</p>
                 </div>
-                <span className="text-sm text-muted-foreground sm:whitespace-nowrap">{e.years}</span>
+                <span className="text-sm font-medium text-primary sm:whitespace-nowrap">{e.years}</span>
               </div>
             ))}
           </div>
