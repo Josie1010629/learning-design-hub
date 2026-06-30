@@ -157,7 +157,7 @@ function HomePage() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="bg-surface/60 py-20 md:py-28">
+      <section id="contact" className="bg-background py-20 md:py-28">
         <div className="container-narrow">
           <div className="mx-auto max-w-2xl text-center">
             <p className="eyebrow">Contact</p>
@@ -167,20 +167,28 @@ function HomePage() {
             <p className="mt-5 text-[1.0625rem] leading-[1.75] text-muted-foreground">
               I'm open to roles and collaborations in learning design, instructional design, and learning research.
             </p>
-            <p className="mt-3 text-sm text-muted-foreground">
-              For opportunities, collaborations, or portfolio inquiries, email is the best way to reach me.
-            </p>
 
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col items-center gap-6">
               <a
                 href="mailto:jinliangjie002@gmail.com"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-[color:var(--color-deep)]"
+                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:bg-[color:var(--color-deep)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
               >
                 <Mail size={16} /> Email Me
               </a>
-              <div className="flex flex-col items-center gap-1 text-sm text-muted-foreground sm:items-start">
-                <a href="mailto:jinliangjie002@gmail.com" className="hover:text-primary">jinliangjie002@gmail.com</a>
-                <span>617-685-1473</span>
+
+              <div className="inline-flex flex-col gap-0 rounded-xl border border-[color:var(--color-sage)] bg-card p-1.5 shadow-sm">
+                <a
+                  href="mailto:jinliangjie002@gmail.com"
+                  className="flex items-center gap-3 rounded-lg px-4 py-3 text-sm transition hover:bg-surface"
+                >
+                  <Mail size={16} className="shrink-0 text-primary" />
+                  <span className="font-medium text-foreground">jinliangjie002@gmail.com</span>
+                </a>
+                <span className="mx-4 h-px bg-[color:var(--color-sage)]" />
+                <div className="flex items-center gap-3 rounded-lg px-4 py-3 text-sm">
+                  <Phone size={16} className="shrink-0 text-primary" />
+                  <span className="font-medium text-foreground">617-685-1473</span>
+                </div>
               </div>
             </div>
           </div>
