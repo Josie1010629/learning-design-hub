@@ -44,8 +44,7 @@ function CaseStudyPage() {
 
       <article className="container-narrow pb-20 pt-12 md:pt-16">
         <Link
-          to="/"
-          hash="projects"
+          to="/projects"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft size={14} /> Back to Projects
@@ -139,8 +138,7 @@ function CaseStudyPage() {
 
         <div className="mt-16 flex justify-center">
           <Link
-            to="/"
-            hash="projects"
+            to="/projects"
             className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium hover:border-foreground/30"
           >
             <ArrowLeft size={15} /> Back to Projects

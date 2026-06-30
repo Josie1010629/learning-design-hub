@@ -2,9 +2,11 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const navItems = [
-  { label: "Home", to: "/", hash: "" },
-  { label: "Projects", to: "/", hash: "projects" },
+type NavItem = { label: string; to: "/" | "/projects"; hash?: string };
+
+const navItems: NavItem[] = [
+  { label: "Home", to: "/" },
+  { label: "Projects", to: "/projects" },
   { label: "Skills", to: "/", hash: "skills" },
   { label: "Contact", to: "/", hash: "contact" },
 ];
@@ -16,19 +18,19 @@ export function SiteHeader() {
 
   useEffect(() => { setOpen(false); }, [pathname]);
 
-  const handleNav = (hash: string) => (e: React.MouseEvent) => {
-    if (onHome) {
-      e.preventDefault();
-      if (!hash) window.scrollTo({ top: 0, behavior: "smooth" });
-      else document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
-      setOpen(false);
-    }
+  const handleScroll = (item: NavItem) => (e: React.MouseEvent) => {
+    if (item.to !== "/") return;
+    if (!onHome) return; // let router navigate to "/" with hash
+    e.preventDefault();
+    if (!item.hash) window.scrollTo({ top: 0, behavior: "smooth" });
+    else document.getElementById(item.hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setOpen(false);
   };
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/80 backdrop-blur">
       <div className="container-narrow flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-baseline gap-2" onClick={handleNav("")}>
+        <Link to="/" className="flex items-baseline gap-2" onClick={handleScroll({ label: "Home", to: "/" })}>
           <span className="font-serif text-lg text-foreground">Liangjie Jin</span>
           <span className="hidden text-xs text-muted-foreground sm:inline">— Learning Designer</span>
         </Link>
@@ -38,8 +40,8 @@ export function SiteHeader() {
             <Link
               key={item.label}
               to={item.to}
-              hash={item.hash || undefined}
-              onClick={handleNav(item.hash)}
+              hash={item.hash}
+              onClick={handleScroll(item)}
               className="text-sm text-foreground/80 transition hover:text-primary"
             >
               {item.label}
@@ -71,8 +73,8 @@ export function SiteHeader() {
               <Link
                 key={item.label}
                 to={item.to}
-                hash={item.hash || undefined}
-                onClick={handleNav(item.hash)}
+                hash={item.hash}
+                onClick={handleScroll(item)}
                 className="py-2 text-sm text-foreground/80"
               >
                 {item.label}
