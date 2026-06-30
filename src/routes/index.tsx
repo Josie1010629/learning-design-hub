@@ -121,35 +121,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* SKILLS */}
-      <section id="skills" className="bg-surface/60 py-20 md:py-28">
-        <div className="container-narrow">
-          <header className="mx-auto max-w-2xl text-center">
-            <p className="eyebrow">Capabilities</p>
-            <h2 className="mt-3 font-serif text-[1.75rem] text-foreground md:text-[2rem]">Skills</h2>
-          </header>
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {skillCategories.map((c) => (
-              <div
-                key={c.title}
-                className="flex flex-col rounded-xl border border-border bg-card p-6 transition hover:border-primary/40"
-              >
-                <h3 className="font-serif text-[1.05rem] text-foreground">{c.title}</h3>
-                <span className="mt-3 h-px w-8 bg-primary/60" />
-                <ul className="mt-4 space-y-1.5">
-                  {c.items.map((s) => (
-                    <li key={s} className="text-sm leading-relaxed text-foreground/75">
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* EDUCATION */}
       <section id="education" className="py-20 md:py-28">
         <div className="container-narrow grid gap-12 md:grid-cols-12">
