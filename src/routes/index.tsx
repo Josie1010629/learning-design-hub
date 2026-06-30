@@ -16,7 +16,6 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const POSITIONING = ["Learning Designer", "Instructional Designer", "AI-Empowered Learning"];
 const ABOUT_TAGS = ["Learning Science", "AI-Empowered Learning", "Evaluation & Research"];
 
 function HomePage() {
