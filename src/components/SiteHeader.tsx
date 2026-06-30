@@ -2,13 +2,16 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-type NavItem = { label: string; to: "/" | "/projects"; hash?: string };
+type NavItem =
+  | { label: string; kind: "route"; to: "/" | "/projects" }
+  | { label: string; kind: "hash"; hash: string }
+  | { label: string; kind: "external"; href: string };
 
 const navItems: NavItem[] = [
-  { label: "Home", to: "/" },
-  { label: "Projects", to: "/projects" },
-  { label: "Skills", to: "/", hash: "skills" },
-  { label: "Contact", to: "/", hash: "contact" },
+  { label: "Projects", kind: "route", to: "/projects" },
+  { label: "Resume", kind: "external", href: "/resume.pdf" },
+  { label: "About", kind: "hash", hash: "about" },
+  { label: "Contact", kind: "hash", hash: "contact" },
 ];
 
 export function SiteHeader() {
@@ -18,43 +21,55 @@ export function SiteHeader() {
 
   useEffect(() => { setOpen(false); }, [pathname]);
 
-  const handleScroll = (item: NavItem) => (e: React.MouseEvent) => {
-    if (item.to !== "/") return;
-    if (!onHome) return; // let router navigate to "/" with hash
-    e.preventDefault();
-    if (!item.hash) window.scrollTo({ top: 0, behavior: "smooth" });
-    else document.getElementById(item.hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
-    setOpen(false);
+  const scrollTo = (hash: string) => {
+    document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const renderItem = (item: NavItem, className: string) => {
+    if (item.kind === "route") {
+      return (
+        <Link key={item.label} to={item.to} className={className}>
+          {item.label}
+        </Link>
+      );
+    }
+    if (item.kind === "external") {
+      return (
+        <a key={item.label} href={item.href} target="_blank" rel="noopener" className={className}>
+          {item.label}
+        </a>
+      );
+    }
+    // hash → if on home, smooth scroll; else navigate home + hash
+    if (onHome) {
+      return (
+        <button
+          key={item.label}
+          onClick={() => { scrollTo(item.hash); setOpen(false); }}
+          className={className}
+        >
+          {item.label}
+        </button>
+      );
+    }
+    return (
+      <Link key={item.label} to="/" hash={item.hash} className={className}>
+        {item.label}
+      </Link>
+    );
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/70 bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="container-narrow flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-baseline gap-2" onClick={handleScroll({ label: "Home", to: "/" })}>
-          <span className="font-serif text-lg text-foreground">Liangjie Jin</span>
-          <span className="hidden text-xs text-muted-foreground sm:inline">— Learning Designer</span>
+        <Link to="/" className="font-serif text-[1.05rem] font-bold tracking-tight text-foreground">
+          Liangjie Jin
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              to={item.to}
-              hash={item.hash}
-              onClick={handleScroll(item)}
-              className="text-sm text-foreground/80 transition hover:text-primary"
-            >
-              {item.label}
-            </Link>
-          ))}
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener"
-            className="text-sm text-foreground/80 transition hover:text-primary"
-          >
-            Resume
-          </a>
+        <nav className="hidden items-center gap-9 md:flex">
+          {navItems.map((item) =>
+            renderItem(item, "text-sm font-medium text-foreground/75 transition hover:text-primary"),
+          )}
         </nav>
 
         <button
@@ -69,20 +84,9 @@ export function SiteHeader() {
       {open && (
         <div className="border-t border-border bg-background md:hidden">
           <nav className="container-narrow flex flex-col py-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                to={item.to}
-                hash={item.hash}
-                onClick={handleScroll(item)}
-                className="py-2 text-sm text-foreground/80"
-              >
-                {item.label}
-              </Link>
-            ))}
-            <a href="/resume.pdf" target="_blank" rel="noopener" className="py-2 text-sm text-foreground/80">
-              Resume
-            </a>
+            {navItems.map((item) =>
+              renderItem(item, "py-2 text-left text-sm font-medium text-foreground/80"),
+            )}
           </nav>
         </div>
       )}
@@ -92,7 +96,7 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-surface/50">
+    <footer className="mt-24 border-t border-border bg-surface/60">
       <div className="container-narrow flex flex-col items-start justify-between gap-3 py-8 sm:flex-row sm:items-center">
         <p className="text-sm text-muted-foreground">© 2026 Liangjie Jin. Learning Designer Portfolio.</p>
         <a href="mailto:jinliangjie002@gmail.com" className="text-sm text-foreground/80 hover:text-primary">
