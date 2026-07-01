@@ -3,6 +3,22 @@ import { ArrowLeft } from "lucide-react";
 import { projects } from "@/lib/portfolio-data";
 import { Thumbnail } from "@/components/Thumbnail";
 import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
+import page1 from "@/assets/textbook-pages/page-1.png.asset.json";
+import page2 from "@/assets/textbook-pages/page-2.png.asset.json";
+import page3 from "@/assets/textbook-pages/page-3.png.asset.json";
+import page4 from "@/assets/textbook-pages/page-4.png.asset.json";
+import page5 from "@/assets/textbook-pages/page-5.png.asset.json";
+
+const textbookPages = [
+  { url: page1.url, label: "Page 1" },
+  { url: page2.url, label: "Page 2" },
+  { url: page3.url, label: "Page 3" },
+  { url: page4.url, label: "Page 4" },
+  { url: page5.url, label: "Page 5" },
+];
+
+
+
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
@@ -137,13 +153,41 @@ function CaseStudyPage() {
               </ul>
             </Block>
 
-            <Block id="screenshots" title="Screenshots & Demo">
-              <p className="text-sm text-muted-foreground">Selected artifacts from the project.</p>
-              <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                <Thumbnail kind={project.thumb} label={`${project.title} artifact 1`} />
-                <Thumbnail kind={project.thumb} label={`${project.title} artifact 2`} />
-              </div>
-            </Block>
+            {project.slug === "grade-4-math-curriculum" ? (
+              <Block id="screenshots" title="Textbook Page Preview">
+                <p className="text-sm text-muted-foreground">
+                  Selected pages from the Grade 4 math textbook design are shown below in a scrollable preview.
+                </p>
+                <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface/60 shadow-sm">
+                  <div className="max-h-[70vh] overflow-y-auto md:max-h-[640px]">
+                    <div className="flex flex-col gap-6 p-4 md:p-6">
+                      {textbookPages.map((p, i) => (
+                        <figure key={i} className="overflow-hidden rounded-md border border-border bg-white">
+                          <img
+                            src={p.url}
+                            alt={`Grade 4 math textbook ${p.label}`}
+                            loading="lazy"
+                            className="block h-auto w-full"
+                          />
+                          <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                            {p.label}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Block>
+            ) : (
+              <Block id="screenshots" title="Screenshots & Demo">
+                <p className="text-sm text-muted-foreground">Selected artifacts from the project.</p>
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  <Thumbnail kind={project.thumb} label={`${project.title} artifact 1`} />
+                  <Thumbnail kind={project.thumb} label={`${project.title} artifact 2`} />
+                </div>
+              </Block>
+            )}
+
           </div>
         </div>
 
