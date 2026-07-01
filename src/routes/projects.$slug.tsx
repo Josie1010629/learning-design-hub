@@ -3,6 +3,21 @@ import { ArrowLeft } from "lucide-react";
 import { projects } from "@/lib/portfolio-data";
 import { Thumbnail } from "@/components/Thumbnail";
 import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
+import page1 from "@/assets/textbook-pages/page-1.png.asset.json";
+import page2 from "@/assets/textbook-pages/page-2.png.asset.json";
+import page3 from "@/assets/textbook-pages/page-3.png.asset.json";
+import page4 from "@/assets/textbook-pages/page-4.png.asset.json";
+import page5 from "@/assets/textbook-pages/page-5.png.asset.json";
+
+const textbookPages = [
+  { url: page1.url, label: "Page 1" },
+  { url: page2.url, label: "Page 2" },
+  { url: page3.url, label: "Page 3" },
+  { url: page4.url, label: "Page 4" },
+  { url: page5.url, label: "Page 5" },
+];
+
+import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
