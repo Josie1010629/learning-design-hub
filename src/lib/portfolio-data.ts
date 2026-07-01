@@ -275,11 +275,11 @@ export const projects: Project[] = [
   },
   {
     slug: "agoda-cx-research",
-    title: "Agoda: Customer Experience Research",
-    type: "User Experience Research / Customer Journey Analysis",
+    title: "Agoda",
+    type: "User Experience Research",
     category: "Evaluation & Research",
     short:
-      "Analyzed Agoda's booking journey using user-generated content and qualitative data, generating 12 prioritized product recommendations.",
+      "A customer experience research project that analyzed user-generated content and interview data to identify user booking friction and generate 12 prioritized product recommendations.",
     role: "Customer Experience Researcher",
     skills: ["Customer Experience Research", "Qualitative Analysis", "Journey Mapping", "Insight Synthesis"],
     thumb: "journey",
