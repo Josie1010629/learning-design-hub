@@ -17,7 +17,8 @@ const textbookPages = [
   { url: page5.url, label: "Page 5" },
 ];
 
-import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
+
+
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
