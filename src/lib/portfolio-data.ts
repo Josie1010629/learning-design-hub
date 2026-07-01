@@ -124,12 +124,12 @@ export const projects: Project[] = [
   {
     slug: "feeltogether",
     title: "Feeltogether",
-    type: "Social-Emotional Learning / Mobile App Design",
+    type: "Social-Emotional Learning",
     category: "Learning Design",
     short:
       "An interactive mobile app that helps parents practice emotion co-regulation through guided scenarios and real-time scaffolding.",
-    role: "Learning Designer, Interaction Designer",
-    skills: ["Parent-Facing Learning Design", "Behavior Change Strategy", "Mobile UX Flow", "Scenario-Based Interaction"],
+    role: "Learning Designer",
+    skills: ["Parent Learning Design", "Behavior Change Design", "Mobile UX", "Scenario-Based Learning"],
     thumb: "mobile",
     cover: { url: feeltogetherCover.url, fit: "contain" },
 
