@@ -186,6 +186,45 @@ function CaseStudyPage() {
                   </div>
                 </div>
               </Block>
+            ) : project.slug === "jungle-math-chess" ? (
+              <Block id="screenshots" title="Screenshots & Demo">
+                <p className="text-sm text-muted-foreground">
+                  Board redesign artifacts and a demo of the AI-assisted play prototype.
+                </p>
+
+                <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface/60 shadow-sm">
+                  <div className="max-h-[70vh] overflow-y-auto md:max-h-[560px]">
+                    <div className="flex flex-col gap-6 p-4 md:p-6">
+                      {jungleImages.map((img, i) => (
+                        <figure key={i} className="overflow-hidden rounded-md border border-border bg-white">
+                          <img
+                            src={img.url}
+                            alt={`Jungle Math Chess — ${img.label}`}
+                            loading="lazy"
+                            className="block h-auto w-full"
+                          />
+                          <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                            {img.label}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <figure className="mt-6 overflow-hidden rounded-xl border border-border bg-black shadow-sm">
+                  <video
+                    src={jungleDemo.url}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="block h-auto w-full"
+                  />
+                  <figcaption className="border-t border-border bg-card px-3 py-2 text-xs text-muted-foreground">
+                    Play-with-AI prototype demo
+                  </figcaption>
+                </figure>
+              </Block>
             ) : (
               <Block id="screenshots" title="Screenshots & Demo">
                 <p className="text-sm text-muted-foreground">Selected artifacts from the project.</p>
@@ -195,6 +234,7 @@ function CaseStudyPage() {
                 </div>
               </Block>
             )}
+
 
           </div>
         </div>
