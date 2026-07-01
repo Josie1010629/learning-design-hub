@@ -60,9 +60,20 @@ function CaseStudyPage() {
         {/* Cover */}
         <div className="mt-10 overflow-hidden rounded-xl border border-border bg-card p-6 md:p-10">
           <div className="mx-auto max-w-3xl">
-            <Thumbnail kind={project.thumb} label={project.title} />
+            {project.cover ? (
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md bg-surface">
+                <img
+                  src={project.cover.url}
+                  alt={`${project.title} cover`}
+                  className={`h-full w-full ${project.cover.fit === "contain" ? "object-contain p-2" : "object-cover"}`}
+                />
+              </div>
+            ) : (
+              <Thumbnail kind={project.thumb} label={project.title} />
+            )}
           </div>
         </div>
+
 
         {/* Snapshot */}
         <section className="mt-12 rounded-xl border border-border bg-surface/60 p-6 md:p-8">
