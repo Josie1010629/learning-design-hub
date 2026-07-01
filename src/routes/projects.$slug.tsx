@@ -31,6 +31,24 @@ import ftSlide17 from "@/assets/feeltogether/slide-17.jpg.asset.json";
 import ftSlide18 from "@/assets/feeltogether/slide-18.jpg.asset.json";
 import ftSlide19 from "@/assets/feeltogether/slide-19.jpg.asset.json";
 import ftDemo from "@/assets/feeltogether/demo.mp4.asset.json";
+import cpSlide1 from "@/assets/copal/slide-01.jpg.asset.json";
+import cpSlide2 from "@/assets/copal/slide-02.jpg.asset.json";
+import cpSlide3 from "@/assets/copal/slide-03.jpg.asset.json";
+import cpSlide4 from "@/assets/copal/slide-04.jpg.asset.json";
+import cpSlide5 from "@/assets/copal/slide-05.jpg.asset.json";
+import cpSlide6 from "@/assets/copal/slide-06.jpg.asset.json";
+import cpSlide7 from "@/assets/copal/slide-07.jpg.asset.json";
+import cpSlide8 from "@/assets/copal/slide-08.jpg.asset.json";
+import cpSlide9 from "@/assets/copal/slide-09.jpg.asset.json";
+import cpSlide10 from "@/assets/copal/slide-10.jpg.asset.json";
+import cpSlide11 from "@/assets/copal/slide-11.jpg.asset.json";
+import cpSlide12 from "@/assets/copal/slide-12.jpg.asset.json";
+import cpSlide13 from "@/assets/copal/slide-13.jpg.asset.json";
+import cpSlide14 from "@/assets/copal/slide-14.jpg.asset.json";
+import cpSlide15 from "@/assets/copal/slide-15.jpg.asset.json";
+import cpSlide16 from "@/assets/copal/slide-16.jpg.asset.json";
+import cpSlide17 from "@/assets/copal/slide-17.jpg.asset.json";
+import cpSlide18 from "@/assets/copal/slide-18.jpg.asset.json";
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
