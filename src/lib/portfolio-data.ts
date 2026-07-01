@@ -90,8 +90,8 @@ export const projects: Project[] = [
     category: "Learning Design",
     short:
       "A classic board game redesigned for ages 6–8 into a math learning experience with clear goals, scaffolding, and playful practice.",
-    role: "Learning Designer, Interaction Designer",
-    skills: ["Learning Objectives", "Feedback Design", "Game-Based Practice", "Visual Learning Flow"],
+    role: "Learning Experience Designer",
+    skills: ["Game-Based Practice", "Practice Loop Design", "Feedback Design", "Visual Learning Flow"],
     thumb: "game",
     cover: { url: jungleMathCover.url, fit: "contain" },
 
