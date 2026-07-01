@@ -179,31 +179,32 @@ export const projects: Project[] = [
     cover: { url: copalCover.url, fit: "contain" },
 
     overview:
-      "Co-Pal supports families by linking children's emotion check-ins with caregiver guidance, creating a shared, low-friction skill-building rhythm.",
+      "A wearable-supported intervention system for children with ASD and their caregivers, using biosensor data to detect rising stress, trigger real-time alerts, and guide timely support decisions.",
     myRole:
-      "Designed the system architecture, intervention logic, and caregiver-facing learning materials.",
+      "Designed the wearable-supported system concept, system flow, alert logic, data sources, and caregiver-facing mobile touchpoints.",
     goal:
-      "Reduce caregiver decision fatigue while making everyday interactions developmentally productive.",
+      "Help caregivers identify early signs of emotional escalation and respond more quickly through real-time physiological signals, contextual logs, and personalized recommendations.",
     process: [
-      "Conducted secondary research on caregiver workflows and child needs.",
-      "Mapped a closed-loop system: check-in → guidance → activity → reflection.",
-      "Designed intervention modules aligned to common regulation challenges.",
-      "Prototyped caregiver dashboard and child-facing micro-interactions.",
+      "Researched current wearable and regulation-support tools, identifying a gap in systems that connect real-time physiological monitoring with home-based caregiver support.",
+      "Designed a wearable biosensor concept that tracks stress-related signals such as heart rate, HRV, temperature, and breathing patterns.",
+      "Mapped the alert workflow from biosignal detection to stress-zone feedback, caregiver notification, contextual logging, and recommendation delivery.",
+      "Defined data sources across child biosensor data, caregiver logs, and child outcomes to support more accurate recommendations over time.",
     ],
     decisions: [
-      "Centered the system around shared rituals, not parent-only tasks.",
-      "Used plain-language guidance over clinical terminology.",
+      "Used stress zones to translate complex physiological data into clear, actionable feedback for caregivers.",
+      "Combined real-time detection with long-term pattern recognition to improve recommendation accuracy over time.",
     ],
     result: [
-      "System map, journey diagrams, and prototype screens for both caregiver and child surfaces.",
+      "A concept prototype and system model combining wearable biosensor monitoring, caregiver alerts, contextual logging, co-regulation recommendations, feedback loops, and long-term pattern insights.",
     ],
     snapshot: {
       audience: "Autistic children and their caregivers",
-      timeline: "10 weeks",
+      timeline: "4 weeks",
       tools: ["Figma", "Miro", "Whimsical"],
-      deliverable: "Service blueprint + prototype screens",
+      deliverable: "Service blueprint",
     },
   },
+
   {
     slug: "app-evaluation-tool",
     title: "App Evaluation Tool",
