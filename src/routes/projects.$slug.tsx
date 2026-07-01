@@ -69,6 +69,11 @@ const feeltogetherSlides = [
   ftSlide14, ftSlide15, ftSlide16, ftSlide17, ftSlide18, ftSlide19,
 ].map((s, i) => ({ url: s.url, label: `Slide ${i + 1}` }));
 
+const copalSlides = [
+  cpSlide1, cpSlide2, cpSlide3, cpSlide4, cpSlide5, cpSlide6, cpSlide7, cpSlide8, cpSlide9,
+  cpSlide10, cpSlide11, cpSlide12, cpSlide13, cpSlide14, cpSlide15, cpSlide16, cpSlide17, cpSlide18,
+].map((s, i) => ({ url: s.url, label: `Slide ${i + 1}` }));
+
 
 
 
