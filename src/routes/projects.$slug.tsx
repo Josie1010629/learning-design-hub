@@ -340,6 +340,23 @@ function CaseStudyPage() {
                   </div>
                 </div>
               </Block>
+            ) : project.slug === "app-evaluation-tool" ? (
+              <Block id="screenshots" title="Screenshots & Demo">
+                <p className="text-sm text-muted-foreground">
+                  Poster presented at the London International Conference on Inclusive Education.
+                </p>
+                <figure className="mt-5 overflow-hidden rounded-xl border border-border bg-white shadow-sm">
+                  <img
+                    src={appEvalPoster.url}
+                    alt="App Evaluation Tool — LICIE conference poster"
+                    loading="lazy"
+                    className="block h-auto w-full"
+                  />
+                  <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                    LICIE Conference Poster
+                  </figcaption>
+                </figure>
+              </Block>
             ) : (
               <Block id="screenshots" title="Screenshots & Demo">
                 <p className="text-sm text-muted-foreground">Selected artifacts from the project.</p>
