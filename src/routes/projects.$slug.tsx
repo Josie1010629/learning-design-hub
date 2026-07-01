@@ -100,7 +100,6 @@ function CaseStudyPage() {
               ["Audience / Users", project.snapshot.audience],
               ["My Role", project.role],
               ["Timeline", project.snapshot.timeline],
-              ["Tools Used", project.snapshot.tools.join(", ")],
               ["Deliverable", project.snapshot.deliverable],
             ].map(([k, v]) => (
               <div key={k as string}>
