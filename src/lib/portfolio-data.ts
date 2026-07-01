@@ -44,12 +44,12 @@ export type ThumbKind =
 export const projects: Project[] = [
   {
     slug: "grade-4-math-curriculum",
-    title: "Grade 4 Math Curriculum Sample",
-    type: "Curriculum & Learning Materials Design",
+    title: "Math Textbook Sample",
+    type: "Curriculum Design",
     category: "Learning Design",
     short:
       "A Grade 4 math textbook sample for U.S. elementary learners — lesson writing, practice design, assessment alignment, and visual page layout.",
-    role: "Learning Designer, Curriculum Designer",
+    role: "Curriculum Designer",
     skills: ["Learner-Centered Design", "Instructional Sequencing", "Practice Design", "Assessment Design"],
     thumb: "curriculum",
     cover: { url: mathTextbookCover.url, fit: "contain" },
@@ -90,8 +90,8 @@ export const projects: Project[] = [
     category: "Learning Design",
     short:
       "A classic board game redesigned for ages 6–8 into a math learning experience with clear goals, scaffolding, and playful practice.",
-    role: "Learning Designer, Interaction Designer",
-    skills: ["Learning Objectives", "Feedback Design", "Game-Based Practice", "Visual Learning Flow"],
+    role: "Learning Experience Designer",
+    skills: ["Game-Based Practice", "Practice Loop Design", "Feedback Design", "Visual Learning Flow"],
     thumb: "game",
     cover: { url: jungleMathCover.url, fit: "contain" },
 
@@ -124,12 +124,12 @@ export const projects: Project[] = [
   {
     slug: "feeltogether",
     title: "Feeltogether",
-    type: "Social-Emotional Learning / Mobile App Design",
+    type: "Social-Emotional Learning",
     category: "Learning Design",
     short:
       "An interactive mobile app that helps parents practice emotion co-regulation through guided scenarios and real-time scaffolding.",
-    role: "Learning Designer, Interaction Designer",
-    skills: ["Parent-Facing Learning Design", "Behavior Change Strategy", "Mobile UX Flow", "Scenario-Based Interaction"],
+    role: "Learning Designer",
+    skills: ["Parent Learning Design", "Behavior Change Design", "Mobile UX", "Scenario-Based Learning"],
     thumb: "mobile",
     cover: { url: feeltogetherCover.url, fit: "contain" },
 
