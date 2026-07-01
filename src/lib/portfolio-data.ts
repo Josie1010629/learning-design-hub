@@ -44,12 +44,12 @@ export type ThumbKind =
 export const projects: Project[] = [
   {
     slug: "grade-4-math-curriculum",
-    title: "Grade 4 Math Curriculum Sample",
-    type: "Curriculum & Learning Materials Design",
+    title: "Math Textbook Sample",
+    type: "Curriculum Design",
     category: "Learning Design",
     short:
       "A Grade 4 math textbook sample for U.S. elementary learners — lesson writing, practice design, assessment alignment, and visual page layout.",
-    role: "Learning Designer, Curriculum Designer",
+    role: "Curriculum Designer",
     skills: ["Learner-Centered Design", "Instructional Sequencing", "Practice Design", "Assessment Design"],
     thumb: "curriculum",
     cover: { url: mathTextbookCover.url, fit: "contain" },
