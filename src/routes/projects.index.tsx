@@ -85,18 +85,18 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
       </div>
 
       <div className="flex flex-1 flex-col p-6">
-        <p className="text-xs font-medium uppercase tracking-wider text-accent">{project.type}</p>
-        <h3 className="mt-2 font-serif text-xl text-foreground">{project.title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.short}</p>
+        <p className="text-[0.8125rem] font-medium uppercase tracking-wider text-accent">{project.type}</p>
+        <h3 className="mt-2 font-serif text-[1.375rem] text-foreground">{project.title}</h3>
+        <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted-foreground">{project.short}</p>
 
-        <dl className="mt-4 space-y-1.5 text-xs">
+        <dl className="mt-4 space-y-2 text-sm">
           <div className="flex gap-2">
-            <dt className="w-12 shrink-0 text-muted-foreground">Role</dt>
-            <dd className="text-foreground/80">{project.role}</dd>
+            <dt className="w-14 shrink-0 text-muted-foreground">Role</dt>
+            <dd className="text-foreground/85">{project.role}</dd>
           </div>
           <div className="flex gap-2">
-            <dt className="w-12 shrink-0 text-muted-foreground">Skills</dt>
-            <dd className="text-foreground/80">{project.skills.join(" · ")}</dd>
+            <dt className="w-14 shrink-0 text-muted-foreground">Skills</dt>
+            <dd className="text-foreground/85">{project.skills.join(" · ")}</dd>
           </div>
         </dl>
 
