@@ -1,3 +1,11 @@
+import mathTextbookCover from "@/assets/covers/math-textbook.png.asset.json";
+import jungleMathCover from "@/assets/covers/jungle-math.png.asset.json";
+import feeltogetherCover from "@/assets/covers/feeltogether.png.asset.json";
+import copalCover from "@/assets/covers/copal.png.asset.json";
+import appEvaluationCover from "@/assets/covers/app-evaluation.png.asset.json";
+import cyarkCover from "@/assets/covers/cyark.png.asset.json";
+import agodaCover from "@/assets/covers/agoda.png.asset.json";
+
 export type Project = {
   slug: string;
   title: string;
@@ -7,6 +15,7 @@ export type Project = {
   role: string;
   skills: string[];
   thumb: ThumbKind;
+  cover?: { url: string; fit: "contain" | "cover" };
   // Case study
   overview: string;
   myRole: string;
@@ -30,6 +39,7 @@ export type ThumbKind =
   | "rubric"
   | "usability"
   | "journey";
+
 
 export const projects: Project[] = [
   {
