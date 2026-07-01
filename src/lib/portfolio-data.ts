@@ -99,31 +99,32 @@ export const projects: Project[] = [
     cover: { url: jungleMathCover.url, fit: "contain" },
 
     overview:
-      "A game-based learning experience that turns familiar Jungle Chess piece hierarchy into structured math practice on comparison, place value, and arithmetic fluency.",
+      "A game-based learning experience that embeds multiplication and basic arithmetic practice into the core mechanics of a traditional strategy board game. The project transforms repeated math practice into an engaging play loop supported by AI-assisted scaffolding.",
     myRole:
-      "Defined learning goals, designed the scaffolding system, and produced the interaction flow connecting moves to math practice.",
+      "Defined learning goals, mapped game mechanics to math practice, designed scaffolding systems, and iterated through playtests to balance learning value with fun.",
     goal:
-      "Convert a culturally familiar game into a focused, low-anxiety practice environment where every move embeds a math decision.",
+      "Transform repetitive arithmetic practice into an engaging, low-anxiety play experience where each move involves a meaningful math decision.",
     process: [
-      "Mapped Jungle Chess mechanics to Grade 1–2 math standards.",
-      "Designed a scaffolding ladder from supported to independent play.",
-      "Prototyped move-feedback flows and player-error recovery loops.",
-      "Tested with target-age learners and refined visual cues.",
+      "Mapped game mechanics to multiplication and basic arithmetic practice goals.",
+      "Designed rules that connected player moves to math tasks and strategic decisions.",
+      "Explored AI-assisted hints to support pacing, confidence, and age-appropriate cognitive load.",
     ],
     decisions: [
-      "Tied feedback to the math reasoning, not just win/loss state.",
-      "Introduced optional 'helper cards' to reduce frustration without removing challenge.",
+      "Embedded math practice into core gameplay rather than adding it as a separate layer.",
+      "Used limited-use scaffolds to support productive struggle without giving away answers.",
+      "Designed feedback and support tools to encourage reasoning.",
     ],
     result: [
-      "A playable prototype with rulebook, learner-facing cards, and a teacher facilitation guide.",
+      "A playable prototype that supported repeated arithmetic practice through meaningful gameplay, with playtests showing stronger engagement and sustained participation compared with traditional practice formats.",
     ],
     snapshot: {
       audience: "Children ages 6–8",
       timeline: "4 weeks",
       tools: ["Figma", "Procreate", "Paper prototyping"],
-      deliverable: "Game prototype + facilitation guide",
+      deliverable: "Game prototype",
     },
   },
+
   {
     slug: "feeltogether",
     title: "Feeltogether",
