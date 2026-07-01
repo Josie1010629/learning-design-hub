@@ -1,3 +1,11 @@
+import mathTextbookCover from "@/assets/covers/math-textbook.png.asset.json";
+import jungleMathCover from "@/assets/covers/jungle-math.png.asset.json";
+import feeltogetherCover from "@/assets/covers/feeltogether.png.asset.json";
+import copalCover from "@/assets/covers/copal.png.asset.json";
+import appEvaluationCover from "@/assets/covers/app-evaluation.png.asset.json";
+import cyarkCover from "@/assets/covers/cyark.png.asset.json";
+import agodaCover from "@/assets/covers/agoda.png.asset.json";
+
 export type Project = {
   slug: string;
   title: string;
@@ -7,6 +15,7 @@ export type Project = {
   role: string;
   skills: string[];
   thumb: ThumbKind;
+  cover?: { url: string; fit: "contain" | "cover" };
   // Case study
   overview: string;
   myRole: string;
@@ -31,6 +40,7 @@ export type ThumbKind =
   | "usability"
   | "journey";
 
+
 export const projects: Project[] = [
   {
     slug: "grade-4-math-curriculum",
@@ -42,6 +52,8 @@ export const projects: Project[] = [
     role: "Learning Designer, Curriculum Designer",
     skills: ["Learner-Centered Design", "Instructional Sequencing", "Practice Design", "Assessment Design"],
     thumb: "curriculum",
+    cover: { url: mathTextbookCover.url, fit: "contain" },
+
     overview:
       "A self-contained curriculum sample demonstrating how a single Grade 4 math unit can move learners from concrete representation to fluent practice, with built-in formative checks.",
     myRole:
@@ -81,6 +93,8 @@ export const projects: Project[] = [
     role: "Learning Designer, Interaction Designer",
     skills: ["Learning Objectives", "Feedback Design", "Game-Based Practice", "Visual Learning Flow"],
     thumb: "game",
+    cover: { url: jungleMathCover.url, fit: "contain" },
+
     overview:
       "A game-based learning experience that turns familiar Jungle Chess piece hierarchy into structured math practice on comparison, place value, and arithmetic fluency.",
     myRole:
@@ -117,6 +131,8 @@ export const projects: Project[] = [
     role: "Learning Designer, Interaction Designer",
     skills: ["Parent-Facing Learning Design", "Behavior Change Strategy", "Mobile UX Flow", "Scenario-Based Interaction"],
     thumb: "mobile",
+    cover: { url: feeltogetherCover.url, fit: "contain" },
+
     overview:
       "Feeltogether teaches co-regulation skills inside everyday parent–child moments through micro-scenarios, reflective prompts, and just-in-time guidance.",
     myRole:
@@ -153,6 +169,8 @@ export const projects: Project[] = [
     role: "Learning Designer, Systems Designer",
     skills: ["Learner Analysis", "Intervention Design", "System Mapping", "Caregiver Support"],
     thumb: "system",
+    cover: { url: copalCover.url, fit: "contain" },
+
     overview:
       "Co-Pal supports families by linking children's emotion check-ins with caregiver guidance, creating a shared, low-friction skill-building rhythm.",
     myRole:
@@ -189,6 +207,8 @@ export const projects: Project[] = [
     role: "Evaluation Designer, Learning Science Researcher",
     skills: ["Rubric Design", "Learning Science Research", "App Evaluation", "Decision Support"],
     thumb: "rubric",
+    cover: { url: appEvaluationCover.url, fit: "cover" },
+
     overview:
       "A rubric and scoring guide that helps educators and parents assess apps across learning goals, interaction quality, feedback, exploration, social learning, language, adjustability, and design.",
     myRole:
@@ -225,6 +245,8 @@ export const projects: Project[] = [
     role: "Evaluation Researcher, Learning Designer",
     skills: ["Formative Evaluation", "Usability Testing", "Learner Feedback Analysis", "Product Improvement"],
     thumb: "usability",
+    cover: { url: cyarkCover.url, fit: "cover" },
+
     overview:
       "A formative evaluation surfacing usability and instructional issues on CyArk's digital heritage platform, paired with prioritized improvement recommendations.",
     myRole:
@@ -261,6 +283,8 @@ export const projects: Project[] = [
     role: "Customer Experience Researcher",
     skills: ["Customer Experience Research", "Qualitative Analysis", "Journey Mapping", "Insight Synthesis"],
     thumb: "journey",
+    cover: { url: agodaCover.url, fit: "contain" },
+
     overview:
       "An end-to-end CX analysis of Agoda's booking journey — surfacing friction around search, pricing transparency, booking confidence, and service recovery.",
     myRole:

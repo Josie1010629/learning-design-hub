@@ -70,8 +70,20 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition hover:border-foreground/20">
       <div className="p-5 pb-0">
-        <Thumbnail kind={project.thumb} label={project.title} />
+        {project.cover ? (
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md border border-border bg-surface">
+            <img
+              src={project.cover.url}
+              alt={`${project.title} cover`}
+              className={`h-full w-full ${project.cover.fit === "contain" ? "object-contain p-2" : "object-cover"}`}
+              loading="lazy"
+            />
+          </div>
+        ) : (
+          <Thumbnail kind={project.thumb} label={project.title} />
+        )}
       </div>
+
       <div className="flex flex-1 flex-col p-6">
         <p className="text-xs font-medium uppercase tracking-wider text-accent">{project.type}</p>
         <h3 className="mt-2 font-serif text-xl text-foreground">{project.title}</h3>
