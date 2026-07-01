@@ -49,6 +49,7 @@ import cpSlide15 from "@/assets/copal/slide-15.jpg.asset.json";
 import cpSlide16 from "@/assets/copal/slide-16.jpg.asset.json";
 import cpSlide17 from "@/assets/copal/slide-17.jpg.asset.json";
 import cpSlide18 from "@/assets/copal/slide-18.jpg.asset.json";
+import appEvalPoster from "@/assets/app-evaluation/slide-1.jpg.asset.json";
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
@@ -338,6 +339,23 @@ function CaseStudyPage() {
                     </div>
                   </div>
                 </div>
+              </Block>
+            ) : project.slug === "app-evaluation-tool" ? (
+              <Block id="screenshots" title="Screenshots & Demo">
+                <p className="text-sm text-muted-foreground">
+                  Poster presented at the London International Conference on Inclusive Education.
+                </p>
+                <figure className="mt-5 overflow-hidden rounded-xl border border-border bg-white shadow-sm">
+                  <img
+                    src={appEvalPoster.url}
+                    alt="App Evaluation Tool — LICIE conference poster"
+                    loading="lazy"
+                    className="block h-auto w-full"
+                  />
+                  <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                    LICIE Conference Poster
+                  </figcaption>
+                </figure>
               </Block>
             ) : (
               <Block id="screenshots" title="Screenshots & Demo">

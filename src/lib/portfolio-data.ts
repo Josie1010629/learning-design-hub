@@ -218,31 +218,34 @@ export const projects: Project[] = [
     cover: { url: appEvaluationCover.url, fit: "cover" },
 
     overview:
-      "A rubric and scoring guide that helps educators and parents assess apps across learning goals, interaction quality, feedback, exploration, social learning, language, adjustability, and design.",
+      "A research-based evaluation tool that helps app developers, educators, and parents assess educational potential of apps for primary-aged children.",
     myRole:
-      "Synthesized the research base, defined evaluation dimensions, and authored the scoring rubric and decision guide.",
+      "Led the research process, including literature review, rubric adaptation, survey design and administration, participant recruitment, data analysis, and final report writing.",
     goal:
-      "Translate learning science into a practical, defensible tool non-experts can use.",
+      "Translate learning science into a practical evaluation tool that non-experts can use to select and design higher-quality learning apps.",
     process: [
-      "Reviewed literature on children's app learning and quality indicators.",
-      "Defined eight evaluation dimensions with behavioral indicators.",
-      "Drafted scoring criteria and weighting recommendations.",
-      "Piloted the tool on sample apps and iterated.",
+      "Adapted an existing preschool app evaluation tool through comprehensive literature review and market research.",
+      "Defined ten evaluation dimensions with behavioral indicators and scoring criteria.",
+      "Conducted a two-stage validation study with app developers, educators, and caregivers.",
+      "Refined the framework using quantitative ratings and qualitative feedback.",
     ],
     decisions: [
-      "Used behavioral indicators rather than subjective adjectives.",
-      "Built a decision view that summarizes strengths and caveats.",
+      "Shifted the focus from app features to children's actual learning behaviors.",
+      "Used behavioral indicators instead of subjective quality judgments.",
+      "Simplified learning science language into parent- and educator-friendly criteria.",
+      "Designed the framework to support both app selection and learning-centered product design.",
     ],
     result: [
-      "An 8-dimension rubric, scoring guide, and example evaluation reports.",
+      "An 8-dimension evaluation framework with validated criteria, scoring guidelines, and decision-support guidance.",
     ],
     snapshot: {
       audience: "Educators, parents, EdTech evaluators",
-      timeline: "6 weeks",
+      timeline: "5 months",
       tools: ["Google Docs", "Notion", "Figma"],
-      deliverable: "Evaluation rubric + decision guide",
+      deliverable: "Published evaluation framework + London International Conference on Inclusive Education poster presentation",
     },
   },
+
   {
     slug: "cyark-formative-evaluation",
     title: "CyArk",
