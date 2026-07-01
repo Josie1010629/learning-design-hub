@@ -205,7 +205,7 @@ export const projects: Project[] = [
     short:
       "A research-based evaluation tool assessing the educational potential of touchscreen apps for primary-aged learners.",
     role: "Evaluation Designer, Learning Science Researcher",
-    skills: ["Rubric Design", "Learning Science Research", "App Evaluation", "Decision Support"],
+    skills: ["Rubric Design", "Mixed Method Research", "App Evaluation", "Decision Support"],
     thumb: "rubric",
     cover: { url: appEvaluationCover.url, fit: "cover" },
 
