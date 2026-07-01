@@ -49,6 +49,7 @@ import cpSlide15 from "@/assets/copal/slide-15.jpg.asset.json";
 import cpSlide16 from "@/assets/copal/slide-16.jpg.asset.json";
 import cpSlide17 from "@/assets/copal/slide-17.jpg.asset.json";
 import cpSlide18 from "@/assets/copal/slide-18.jpg.asset.json";
+import appEvalPoster from "@/assets/app-evaluation/slide-1.jpg.asset.json";
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
