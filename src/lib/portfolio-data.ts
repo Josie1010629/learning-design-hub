@@ -138,31 +138,34 @@ export const projects: Project[] = [
     cover: { url: feeltogetherCover.url, fit: "contain" },
 
     overview:
-      "Feeltogether teaches co-regulation skills inside everyday parent–child moments through micro-scenarios, reflective prompts, and just-in-time guidance.",
+      "A caregiver-facing learning app that helps parents practice emotion co-regulation strategies and build healthier family communication through short learning modules, scenario-based practice, strategy cards, and reflective journaling.",
     myRole:
-      "Designed the learning architecture and scenario flow, and partnered on the visual UX.",
+      "Designed the learning experience, including learning goals, scenario flow, reflection structure, and mobile interaction patterns, while contributing to prototype development, user research, and UX iteration.",
     goal:
-      "Move parents from one-off tips toward sustained behavior change in emotionally charged moments.",
+      "Help parents move from general parenting advice to practical, repeatable co-regulation strategies they can use before, during, and after everyday emotional moments.",
     process: [
-      "Researched co-regulation literature and parent pain-points.",
-      "Mapped behavior-change loops onto mobile interaction patterns.",
-      "Wrote branching scenarios with multiple plausible parent responses.",
-      "Designed reflective journaling and progress feedback.",
+      "Defined learning goals around recognizing triggers, validating children's emotions, applying co-regulation strategies, and building family routines.",
+      "Designed a learning flow that connects strategy learning, real emotional events, self-regulation, reflection, pattern recognition, and future strategy use.",
+      "Created scenario-based learning activities and strategy cards to make co-regulation concepts easier to practice in realistic parent-child situations.",
+      "Conducted user testing with caregivers and revised the experience based on feedback about flexibility, journaling timing, and real-life relevance.",
     ],
     decisions: [
-      "Replaced quizzes with scenario reflection to fit emotional context.",
-      "Surfaced just-in-time prompts instead of long lessons.",
+      "Replaced quiz-like learning with scenario-based practice to better fit emotionally sensitive parenting moments.",
+      "Separated \"regulate first\" from \"reflect later\" so parents are not asked to journal immediately after stressful events.",
+      "Used short strategy cards to translate co-regulation concepts into clear, usable actions.",
+      "Designed journaling and progress reports to support pattern recognition and long-term behavior change.",
     ],
     result: [
-      "End-to-end mobile flow with onboarding, scenario library, reflection journal, and progress view.",
+      "An end-to-end mobile prototype with learning modules, strategy toolbox, event journal, progress report, and profile features. User testing showed that caregivers valued the app most when it helped them reflect on emotional events, choose practical strategies, and connect learning to real family situations.",
     ],
     snapshot: {
       audience: "Parents of children ages 3–8",
-      timeline: "8 weeks",
+      timeline: "6 weeks",
       tools: ["Figma", "Notion", "Miro"],
       deliverable: "Hi-fi mobile prototype + content library",
     },
   },
+
   {
     slug: "co-pal",
     title: "Co-Pal",
