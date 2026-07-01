@@ -11,6 +11,26 @@ import page5 from "@/assets/textbook-pages/page-5.png.asset.json";
 import jungleBoard from "@/assets/jungle-math/board-comparison.png.asset.json";
 import jungleUI from "@/assets/jungle-math/game-ui.jpg.asset.json";
 import jungleDemo from "@/assets/jungle-math/demo.mov.asset.json";
+import ftSlide1 from "@/assets/feeltogether/slide-1.jpg.asset.json";
+import ftSlide2 from "@/assets/feeltogether/slide-2.jpg.asset.json";
+import ftSlide3 from "@/assets/feeltogether/slide-3.jpg.asset.json";
+import ftSlide4 from "@/assets/feeltogether/slide-4.jpg.asset.json";
+import ftSlide5 from "@/assets/feeltogether/slide-5.jpg.asset.json";
+import ftSlide6 from "@/assets/feeltogether/slide-6.jpg.asset.json";
+import ftSlide7 from "@/assets/feeltogether/slide-7.jpg.asset.json";
+import ftSlide8 from "@/assets/feeltogether/slide-8.jpg.asset.json";
+import ftSlide9 from "@/assets/feeltogether/slide-9.jpg.asset.json";
+import ftSlide10 from "@/assets/feeltogether/slide-10.jpg.asset.json";
+import ftSlide11 from "@/assets/feeltogether/slide-11.jpg.asset.json";
+import ftSlide12 from "@/assets/feeltogether/slide-12.jpg.asset.json";
+import ftSlide13 from "@/assets/feeltogether/slide-13.jpg.asset.json";
+import ftSlide14 from "@/assets/feeltogether/slide-14.jpg.asset.json";
+import ftSlide15 from "@/assets/feeltogether/slide-15.jpg.asset.json";
+import ftSlide16 from "@/assets/feeltogether/slide-16.jpg.asset.json";
+import ftSlide17 from "@/assets/feeltogether/slide-17.jpg.asset.json";
+import ftSlide18 from "@/assets/feeltogether/slide-18.jpg.asset.json";
+import ftSlide19 from "@/assets/feeltogether/slide-19.jpg.asset.json";
+import ftDemo from "@/assets/feeltogether/demo.mp4.asset.json";
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
@@ -24,6 +44,13 @@ const jungleImages = [
   { url: jungleBoard.url, label: "Original chess board → Redesigned math learning tool" },
   { url: jungleUI.url, label: "Animal Math Jungle — digital prototype UI" },
 ];
+
+const feeltogetherSlides = [
+  ftSlide1, ftSlide2, ftSlide3, ftSlide4, ftSlide5, ftSlide6, ftSlide7,
+  ftSlide8, ftSlide9, ftSlide10, ftSlide11, ftSlide12, ftSlide13,
+  ftSlide14, ftSlide15, ftSlide16, ftSlide17, ftSlide18, ftSlide19,
+].map((s, i) => ({ url: s.url, label: `Slide ${i + 1}` }));
+
 
 
 
