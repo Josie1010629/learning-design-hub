@@ -8,6 +8,9 @@ import page2 from "@/assets/textbook-pages/page-2.png.asset.json";
 import page3 from "@/assets/textbook-pages/page-3.png.asset.json";
 import page4 from "@/assets/textbook-pages/page-4.png.asset.json";
 import page5 from "@/assets/textbook-pages/page-5.png.asset.json";
+import jungleBoard from "@/assets/jungle-math/board-comparison.png.asset.json";
+import jungleUI from "@/assets/jungle-math/game-ui.jpg.asset.json";
+import jungleDemo from "@/assets/jungle-math/demo.mov.asset.json";
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
@@ -16,6 +19,12 @@ const textbookPages = [
   { url: page4.url, label: "Page 4" },
   { url: page5.url, label: "Page 5" },
 ];
+
+const jungleImages = [
+  { url: jungleBoard.url, label: "Original chess board → Redesigned math learning tool" },
+  { url: jungleUI.url, label: "Animal Math Jungle — digital prototype UI" },
+];
+
 
 
 
