@@ -237,12 +237,12 @@ export const projects: Project[] = [
   },
   {
     slug: "cyark-formative-evaluation",
-    title: "CyArk: Formative Evaluation of an Educational Product",
+    title: "CyArk",
     type: "Formative Evaluation / Product Research",
     category: "Evaluation & Research",
     short:
       "Formative evaluation of a digital cultural experience platform — identifying UX friction, adoption barriers, and learning challenges.",
-    role: "Evaluation Researcher, Learning Designer",
+    role: "Evaluation Researcher",
     skills: ["Formative Evaluation", "Usability Testing", "Learner Feedback Analysis", "Product Improvement"],
     thumb: "usability",
     cover: { url: cyarkCover.url, fit: "cover" },
