@@ -31,6 +31,24 @@ import ftSlide17 from "@/assets/feeltogether/slide-17.jpg.asset.json";
 import ftSlide18 from "@/assets/feeltogether/slide-18.jpg.asset.json";
 import ftSlide19 from "@/assets/feeltogether/slide-19.jpg.asset.json";
 import ftDemo from "@/assets/feeltogether/demo.mp4.asset.json";
+import cpSlide1 from "@/assets/copal/slide-01.jpg.asset.json";
+import cpSlide2 from "@/assets/copal/slide-02.jpg.asset.json";
+import cpSlide3 from "@/assets/copal/slide-03.jpg.asset.json";
+import cpSlide4 from "@/assets/copal/slide-04.jpg.asset.json";
+import cpSlide5 from "@/assets/copal/slide-05.jpg.asset.json";
+import cpSlide6 from "@/assets/copal/slide-06.jpg.asset.json";
+import cpSlide7 from "@/assets/copal/slide-07.jpg.asset.json";
+import cpSlide8 from "@/assets/copal/slide-08.jpg.asset.json";
+import cpSlide9 from "@/assets/copal/slide-09.jpg.asset.json";
+import cpSlide10 from "@/assets/copal/slide-10.jpg.asset.json";
+import cpSlide11 from "@/assets/copal/slide-11.jpg.asset.json";
+import cpSlide12 from "@/assets/copal/slide-12.jpg.asset.json";
+import cpSlide13 from "@/assets/copal/slide-13.jpg.asset.json";
+import cpSlide14 from "@/assets/copal/slide-14.jpg.asset.json";
+import cpSlide15 from "@/assets/copal/slide-15.jpg.asset.json";
+import cpSlide16 from "@/assets/copal/slide-16.jpg.asset.json";
+import cpSlide17 from "@/assets/copal/slide-17.jpg.asset.json";
+import cpSlide18 from "@/assets/copal/slide-18.jpg.asset.json";
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
@@ -49,6 +67,11 @@ const feeltogetherSlides = [
   ftSlide1, ftSlide2, ftSlide3, ftSlide4, ftSlide5, ftSlide6, ftSlide7,
   ftSlide8, ftSlide9, ftSlide10, ftSlide11, ftSlide12, ftSlide13,
   ftSlide14, ftSlide15, ftSlide16, ftSlide17, ftSlide18, ftSlide19,
+].map((s, i) => ({ url: s.url, label: `Slide ${i + 1}` }));
+
+const copalSlides = [
+  cpSlide1, cpSlide2, cpSlide3, cpSlide4, cpSlide5, cpSlide6, cpSlide7, cpSlide8, cpSlide9,
+  cpSlide10, cpSlide11, cpSlide12, cpSlide13, cpSlide14, cpSlide15, cpSlide16, cpSlide17, cpSlide18,
 ].map((s, i) => ({ url: s.url, label: `Slide ${i + 1}` }));
 
 
@@ -290,6 +313,31 @@ function CaseStudyPage() {
                     Feeltogether prototype demo
                   </figcaption>
                 </figure>
+              </Block>
+            ) : project.slug === "co-pal" ? (
+              <Block id="screenshots" title="Screenshots & Demo">
+                <p className="text-sm text-muted-foreground">
+                  Selected slides from the Co-Pal system design deck.
+                </p>
+                <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface/60 shadow-sm">
+                  <div className="max-h-[70vh] overflow-y-auto md:max-h-[640px]">
+                    <div className="flex flex-col gap-6 p-4 md:p-6">
+                      {copalSlides.map((s, i) => (
+                        <figure key={i} className="overflow-hidden rounded-md border border-border bg-white">
+                          <img
+                            src={s.url}
+                            alt={`Co-Pal — ${s.label}`}
+                            loading="lazy"
+                            className="block h-auto w-full"
+                          />
+                          <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                            {s.label}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </Block>
             ) : (
               <Block id="screenshots" title="Screenshots & Demo">
