@@ -44,45 +44,48 @@ export type ThumbKind =
 export const projects: Project[] = [
   {
     slug: "grade-4-math-curriculum",
-    title: "Math Textbook Sample",
+    title: "Grade 4 Math Textbook Design",
     type: "Curriculum Design",
     category: "Learning Design",
     short:
-      "A Grade 4 math textbook sample for U.S. elementary learners — lesson writing, practice design, assessment alignment, and visual page layout.",
+      "Designed a full Grade 4 math textbook for U.S. elementary learners, including lesson writing, practice design, assessment alignment, teacher support materials, and visual page layout.",
     role: "Curriculum Designer",
     skills: ["Learner-Centered Design", "Instructional Sequencing", "Practice Design", "Assessment Design"],
     thumb: "curriculum",
     cover: { url: mathTextbookCover.url, fit: "contain" },
 
     overview:
-      "A self-contained curriculum sample demonstrating how a single Grade 4 math unit can move learners from concrete representation to fluent practice, with built-in formative checks.",
+      "This project focuses on designing a complete Grade 4 math textbook that supports classroom-ready instruction. The textbook is structured to help learners move from conceptual understanding to guided practice, independent problem-solving, and assessment readiness, with built-in formative checks throughout the learning sequence.",
     myRole:
-      "Owned the full instructional design loop — from learning objectives and content sequencing to worksheet layout and assessment alignment.",
+      "I owned the full curriculum design process, from learning objective mapping and content sequencing to lesson writing, worksheet layout, teacher guidance, and assessment alignment.",
     goal:
-      "Design a unit sample that reads as classroom-ready: clear objectives, progressive practice, and assessments that mirror the cognitive demand of stated objectives.",
+      "Design a full Grade 4 math textbook that is clear, developmentally appropriate, and classroom-ready, with coherent lesson progression, accessible explanations, meaningful practice, and assessments aligned to the intended cognitive demand.",
     process: [
-      "Analyzed Common Core Grade 4 standards and mapped target objectives.",
-      "Sequenced lessons using concrete-to-abstract progression.",
-      "Drafted lesson narratives, worked examples, and tiered practice.",
-      "Designed visual page layouts optimized for early independent readers.",
-      "Aligned formative checks and end-of-unit assessment to objectives.",
+      "Analyzed Common Core Grade 4 standards and mapped target learning objectives.",
+      "Sequenced textbook units and lessons using a concrete-to-representational-to-abstract progression.",
+      "Drafted lesson narratives, worked examples, guided practice, independent practice, and reflection prompts.",
+      "Designed visual page layouts optimized for Grade 4 learners and early independent readers.",
+      "Developed formative checks and end-of-unit assessments aligned to learning objectives and cognitive demand.",
     ],
     decisions: [
-      "Used a consistent three-part lesson structure (Explore → Practice → Reflect).",
+      "Used a consistent lesson structure to support predictable classroom use.",
       "Limited visual density per page to reduce cognitive load.",
-      "Built assessment items at multiple DOK levels.",
+      "Included worked examples, guided exercises, and tiered practice to scaffold different learner needs.",
+      "Designed varied interactive activities to promote active learning, engagement, and skill application.",
+      "Built assessment items across multiple levels of cognitive demand.",
     ],
     result: [
-      "A polished unit sample including teacher notes, student pages, and an aligned assessment blueprint.",
-      "Demonstrates an end-to-end instructional design artifact suitable for K–12 publishers.",
+      "Produced a Grade 4 math textbook design with student-facing lessons, engaging practice activities, formative checks, and aligned assessments.",
+      "The project demonstrates an end-to-end curriculum design artifact suitable for K–12 learning contexts and educational publishing.",
     ],
     snapshot: {
       audience: "Grade 4 U.S. elementary learners and teachers",
-      timeline: "6 weeks",
+      timeline: "Ongoing",
       tools: ["Figma", "Google Docs", "Adobe InDesign"],
-      deliverable: "Unit sample (student pages, teacher notes, assessment)",
+      deliverable: "Full textbook design, including student lessons, practice activities, assessments, and answer key",
     },
   },
+
   {
     slug: "jungle-math-chess",
     title: "Jungle Math Chess",
