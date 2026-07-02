@@ -299,29 +299,32 @@ export const projects: Project[] = [
     cover: { url: agodaCover.url, fit: "contain" },
 
     overview:
-      "An end-to-end CX analysis of Agoda's booking journey — surfacing friction around search, pricing transparency, booking confidence, and service recovery.",
+      "An end-to-end customer experience research project that analyzed Agoda's travel planning and booking journey, surfacing friction around price transparency, search efficiency, booking trust, platform usability, and customer support.",
     myRole:
-      "Led data collection, qualitative coding, journey mapping, and recommendation synthesis.",
+      "Led customer data collection, experiential interviews, user-generated content analysis, qualitative coding, journey mapping, and recommendation synthesis.",
     goal:
-      "Translate scattered customer signals into a coherent journey view and prioritized product opportunities.",
+      "Translate scattered customer signals from interviews, reviews, and online discussions into a structured view of customer needs and prioritized product opportunities.",
     process: [
-      "Collected user-generated content across review platforms and forums.",
-      "Coded qualitative data and clustered recurring friction themes.",
-      "Mapped findings onto an end-to-end booking journey.",
-      "Prioritized recommendations by impact and effort.",
+      "Collected UGC across platforms to capture real customer experiences across booking reliability, pricing, usability, and support.",
+      "Conducted experiential interviews with Agoda users to understand how travelers search, compare, evaluate, and book accommodations.",
+      "Converted interview and UGC data into sentence-level observations and analyzed recurring themes using SFT-LLM support and manual review.",
+      "Organized findings through affinity diagramming to identify customer needs across pricing transparency, search and planning, trust, discovery, booking usability, and support.",
+      "Developed product recommendations grounded in customer needs, implied actions, and platform improvement opportunities.",
     ],
     decisions: [
-      "Anchored each insight to a specific journey moment for traceability.",
-      "Distinguished one-time fixes from systemic experience gaps.",
+      "Anchored each insight to a specific customer journey moment, from discovery and search to booking confirmation and issue resolution.",
+      "Combined interview data with large-scale user-generated content to balance depth with broader customer signals.",
+      "Used affinity diagramming to move from fragmented complaints to a structured hierarchy of customer needs.",
+      "Separated immediate usability fixes from broader experience opportunities, such as discovery, comparison, trust-building, and service recovery.",
     ],
     result: [
-      "Journey map, friction inventory, and a deck of 12 prioritized product recommendations.",
+      "A final research report with customer needs analysis, affinity diagram, friction themes, and prioritized product recommendations, including a Price Confidence System, Smart Comparison Workspace, Verified Stay Insights, Travel Discovery Hub, Integrated Itinerary Builder, and Travel Support Center.",
     ],
     snapshot: {
       audience: "Agoda booking customers",
       timeline: "4 weeks",
       tools: ["Airtable", "Figjam", "Google Sheets"],
-      deliverable: "CX research deck + journey map",
+      deliverable: "CX research report",
     },
   },
 ];
