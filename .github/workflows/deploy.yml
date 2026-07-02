@@ -28,21 +28,10 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Show build output
-        run: |
-          echo "Root files:"
-          ls -la
-          echo ".output files:"
-          ls -la .output || true
-          echo ".output/public files:"
-          ls -la .output/public || true
-          echo "dist files:"
-          ls -la dist || true
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
+          path: ./dist
 
   deploy:
     runs-on: ubuntu-latest
