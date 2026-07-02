@@ -9,8 +9,8 @@ type NavItem =
 
 const navItems: NavItem[] = [
   { label: "Projects", kind: "route", to: "/projects" },
-  { label: "Skills", kind: "hash", hash: "skills" },
   { label: "Education", kind: "hash", hash: "education" },
+  { label: "Skills", kind: "hash", hash: "skills" },
   { label: "Contact", kind: "hash", hash: "contact" },
 ];
 
