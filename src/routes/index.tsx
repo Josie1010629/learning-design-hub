@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Mail, Phone, ChevronDown } from "lucide-react";
 import portraitAsset from "@/assets/portrait.jpeg.asset.json";
 import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 
