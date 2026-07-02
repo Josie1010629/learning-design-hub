@@ -259,27 +259,29 @@ export const projects: Project[] = [
     cover: { url: cyarkCover.url, fit: "cover" },
 
     overview:
-      "A formative evaluation surfacing usability and instructional issues on CyArk's digital heritage platform, paired with prioritized improvement recommendations.",
+      "A formative evaluation of CyArk's Tapestry platform that examined how users navigate the digital heritage experiences, with findings translated into actionable recommendations for engagement, usability, and learning.",
     myRole:
-      "Planned and ran the evaluation, analyzed findings, and authored the recommendation report.",
+      "Planned and conducted usability testing, supported interview design, analyzed qualitative findings, and contributed to the final evaluation report and recommendation deck.",
     goal:
-      "Give the product team a clear, actionable view of where engagement and learning break down.",
+      "Understand how users engage with Tapestry and identify where navigation, feature discovery, pacing, and instructional scaffolding affect meaningful user experiences.",
     process: [
-      "Defined evaluation questions and learner success criteria.",
-      "Designed task-based usability sessions and feedback instruments.",
-      "Synthesized observations into a friction map.",
-      "Prioritized fixes by learning impact and feasibility.",
+      "Defined evaluation questions around user guidance, feature use, pacing, structure, challenges, and memorable learning moments.",
+      "Conducted 30-minute think-aloud usability sessions with educator participants to capture real-time navigation behavior and platform use.",
+      "Facilitated post-test interviews to understand the reasoning behind user choices.",
+      "Analyzed findings through affinity diagramming, thematic coding, and categorization of repeated user patterns.",
+      "Translated findings into prioritized recommendations for improving usability, engagement, and classroom adoption.",
     ],
     decisions: [
-      "Separated UX issues from instructional design issues for cleaner triage.",
-      "Anchored recommendations to specific learner moments, not generic heuristics.",
+      "Focused on observed user behavior rather than only self-reported feedback.",
+      "Separated navigation and usability issues from instructional design opportunities to make recommendations easier to act on.",
+      "Framed findings constructively to help the product team improve the learning experience.",
     ],
     result: [
-      "Findings report with prioritized recommendations across navigation, content scaffolding, and feature discoverability.",
+      "A formative evaluation report and recommendation deck identifying key strengths and friction points across visual engagement, homepage layout, feature discoverability, navigation, pacing, accessibility, and instructional scaffolding.",
     ],
     snapshot: {
       audience: "Adult informal learners",
-      timeline: "5 weeks",
+      timeline: "6 weeks",
       tools: ["Zoom", "Otter.ai", "Figjam", "Notion"],
       deliverable: "Formative evaluation report",
     },
