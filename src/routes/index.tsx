@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Mail, Phone, ChevronDown } from "lucide-react";
 import portraitAsset from "@/assets/portrait.jpeg.asset.json";
 import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 
@@ -147,8 +148,12 @@ function HomePage() {
         </div>
       </section>
 
+      {/* SKILLS */}
+      <SkillsSection />
+
       {/* CONTACT */}
-      <section id="contact" className="bg-background py-20 md:py-28">
+      <section id="contact" className="bg-[color:var(--color-sage)] py-20 md:py-28">
+
         <div className="container-narrow">
           <div className="mx-auto max-w-2xl text-center">
             <p className="eyebrow">Contact</p>
@@ -190,3 +195,71 @@ function HomePage() {
     </div>
   );
 }
+
+const SKILL_GROUPS = [
+  {
+    title: "Learning Experience Design",
+    items: ["Instructional Alignment", "Scaffolding", "Practice Design", "Assessment Strategy"],
+  },
+  {
+    title: "Data & Evaluation",
+    items: ["Evidence-Based Design", "Feedback Analysis", "Design Iteration", "Data-Informed Decisions"],
+  },
+  {
+    title: "UX & Interaction Design",
+    items: ["Experience Flow", "Interaction Design", "Scenario Design", "Feedback Systems"],
+  },
+  {
+    title: "Product Strategy",
+    items: ["Needs Analysis", "Insight Synthesis", "Opportunity Mapping", "Strategic Recommendations"],
+  },
+];
+
+function SkillsSection() {
+  const [open, setOpen] = useState<number | null>(null);
+  return (
+    <section id="skills" className="bg-background py-20 md:py-28">
+      <div className="container-narrow">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="eyebrow">Skills</p>
+          <h2 className="mt-3 font-serif text-[1.75rem] text-foreground md:text-[2rem]">Skills</h2>
+        </div>
+        <div className="mx-auto mt-10 grid max-w-4xl gap-5 sm:grid-cols-2">
+          {SKILL_GROUPS.map((g, i) => {
+            const isOpen = open === i;
+            return (
+              <div
+                key={g.title}
+                className="overflow-hidden rounded-xl border border-[color:var(--color-sage)] bg-card shadow-sm"
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  className="flex w-full items-center justify-between gap-3 px-6 py-5 text-left transition hover:bg-surface"
+                  aria-expanded={isOpen}
+                >
+                  <span className="font-serif text-[1.05rem] text-foreground">{g.title}</span>
+                  <ChevronDown
+                    size={18}
+                    className={`shrink-0 text-primary transition-transform ${isOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {isOpen && (
+                  <ul className="space-y-2 border-t border-[color:var(--color-sage)] bg-surface/60 px-6 py-4 text-sm text-foreground/85">
+                    {g.items.map((it) => (
+                      <li key={it} className="flex items-center gap-2">
+                        <span className="h-1.5 w-1.5 rounded-full bg-primary/70" />
+                        {it}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
