@@ -134,8 +134,25 @@ import cy77 from "@/assets/cyark/page-77.jpg.asset.json";
 import cy78 from "@/assets/cyark/page-78.jpg.asset.json";
 import cy79 from "@/assets/cyark/page-79.jpg.asset.json";
 import cy80 from "@/assets/cyark/page-80.jpg.asset.json";
+import ag01 from "@/assets/agoda/page-01.jpg.asset.json";
+import ag02 from "@/assets/agoda/page-02.jpg.asset.json";
+import ag03 from "@/assets/agoda/page-03.jpg.asset.json";
+import ag04 from "@/assets/agoda/page-04.jpg.asset.json";
+import ag05 from "@/assets/agoda/page-05.jpg.asset.json";
+import ag06 from "@/assets/agoda/page-06.jpg.asset.json";
+import ag07 from "@/assets/agoda/page-07.jpg.asset.json";
+import ag08 from "@/assets/agoda/page-08.jpg.asset.json";
+import ag09 from "@/assets/agoda/page-09.jpg.asset.json";
+import ag10 from "@/assets/agoda/page-10.jpg.asset.json";
+import ag11 from "@/assets/agoda/page-11.jpg.asset.json";
+import ag12 from "@/assets/agoda/page-12.jpg.asset.json";
+import ag13 from "@/assets/agoda/page-13.jpg.asset.json";
+import ag14 from "@/assets/agoda/page-14.jpg.asset.json";
+import ag15 from "@/assets/agoda/page-15.jpg.asset.json";
+import ag16 from "@/assets/agoda/page-16.jpg.asset.json";
 
 const cyarkPages = [cy01, cy02, cy03, cy04, cy05, cy06, cy07, cy08, cy09, cy10, cy11, cy12, cy13, cy14, cy15, cy16, cy17, cy18, cy19, cy20, cy21, cy22, cy23, cy24, cy25, cy26, cy27, cy28, cy29, cy30, cy31, cy32, cy33, cy34, cy35, cy36, cy37, cy38, cy39, cy40, cy41, cy42, cy43, cy44, cy45, cy46, cy47, cy48, cy49, cy50, cy51, cy52, cy53, cy54, cy55, cy56, cy57, cy58, cy59, cy60, cy61, cy62, cy63, cy64, cy65, cy66, cy67, cy68, cy69, cy70, cy71, cy72, cy73, cy74, cy75, cy76, cy77, cy78, cy79, cy80].map((s, i) => ({ url: s.url, label: `Page ${i + 1}` }));
+const agodaPages = [ag01, ag02, ag03, ag04, ag05, ag06, ag07, ag08, ag09, ag10, ag11, ag12, ag13, ag14, ag15, ag16].map((s, i) => ({ url: s.url, label: `Page ${i + 1}` }));
 
 
 const appEvalRubricPages = [appEvalRubric1, appEvalRubric2, appEvalRubric3, appEvalRubric4].map(
