@@ -510,6 +510,31 @@ function CaseStudyPage() {
                   </div>
                 </div>
               </Block>
+            ) : project.slug === "agoda-cx-research" ? (
+              <Block id="screenshots" title="Final Report">
+                <p className="text-sm text-muted-foreground">
+                  Full Agoda CX research report.
+                </p>
+                <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface/60 shadow-sm">
+                  <div className="max-h-[70vh] overflow-y-auto md:max-h-[640px]">
+                    <div className="flex flex-col gap-6 p-4 md:p-6">
+                      {agodaPages.map((p, i) => (
+                        <figure key={i} className="overflow-hidden rounded-md border border-border bg-white">
+                          <img
+                            src={p.url}
+                            alt={`Agoda report — ${p.label}`}
+                            loading="lazy"
+                            className="block h-auto w-full"
+                          />
+                          <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                            {p.label}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Block>
             ) : (
               <Block id="screenshots" title="Screenshots & Demo">
                 <p className="text-sm text-muted-foreground">Selected artifacts from the project.</p>
