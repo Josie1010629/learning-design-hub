@@ -9,7 +9,7 @@ type NavItem =
 
 const navItems: NavItem[] = [
   { label: "Projects", kind: "route", to: "/projects" },
-  { label: "Resume", kind: "external", href: "/resume.pdf" },
+  { label: "Skills", kind: "hash", hash: "skills" },
   { label: "Education", kind: "hash", hash: "education" },
   { label: "Contact", kind: "hash", hash: "contact" },
 ];
