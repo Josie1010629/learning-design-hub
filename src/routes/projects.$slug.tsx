@@ -54,6 +54,89 @@ import appEvalRubric1 from "@/assets/app-evaluation/rubric-1.png.asset.json";
 import appEvalRubric2 from "@/assets/app-evaluation/rubric-2.png.asset.json";
 import appEvalRubric3 from "@/assets/app-evaluation/rubric-3.png.asset.json";
 import appEvalRubric4 from "@/assets/app-evaluation/rubric-4.png.asset.json";
+import cy01 from "@/assets/cyark/page-01.jpg.asset.json";
+import cy02 from "@/assets/cyark/page-02.jpg.asset.json";
+import cy03 from "@/assets/cyark/page-03.jpg.asset.json";
+import cy04 from "@/assets/cyark/page-04.jpg.asset.json";
+import cy05 from "@/assets/cyark/page-05.jpg.asset.json";
+import cy06 from "@/assets/cyark/page-06.jpg.asset.json";
+import cy07 from "@/assets/cyark/page-07.jpg.asset.json";
+import cy08 from "@/assets/cyark/page-08.jpg.asset.json";
+import cy09 from "@/assets/cyark/page-09.jpg.asset.json";
+import cy10 from "@/assets/cyark/page-10.jpg.asset.json";
+import cy11 from "@/assets/cyark/page-11.jpg.asset.json";
+import cy12 from "@/assets/cyark/page-12.jpg.asset.json";
+import cy13 from "@/assets/cyark/page-13.jpg.asset.json";
+import cy14 from "@/assets/cyark/page-14.jpg.asset.json";
+import cy15 from "@/assets/cyark/page-15.jpg.asset.json";
+import cy16 from "@/assets/cyark/page-16.jpg.asset.json";
+import cy17 from "@/assets/cyark/page-17.jpg.asset.json";
+import cy18 from "@/assets/cyark/page-18.jpg.asset.json";
+import cy19 from "@/assets/cyark/page-19.jpg.asset.json";
+import cy20 from "@/assets/cyark/page-20.jpg.asset.json";
+import cy21 from "@/assets/cyark/page-21.jpg.asset.json";
+import cy22 from "@/assets/cyark/page-22.jpg.asset.json";
+import cy23 from "@/assets/cyark/page-23.jpg.asset.json";
+import cy24 from "@/assets/cyark/page-24.jpg.asset.json";
+import cy25 from "@/assets/cyark/page-25.jpg.asset.json";
+import cy26 from "@/assets/cyark/page-26.jpg.asset.json";
+import cy27 from "@/assets/cyark/page-27.jpg.asset.json";
+import cy28 from "@/assets/cyark/page-28.jpg.asset.json";
+import cy29 from "@/assets/cyark/page-29.jpg.asset.json";
+import cy30 from "@/assets/cyark/page-30.jpg.asset.json";
+import cy31 from "@/assets/cyark/page-31.jpg.asset.json";
+import cy32 from "@/assets/cyark/page-32.jpg.asset.json";
+import cy33 from "@/assets/cyark/page-33.jpg.asset.json";
+import cy34 from "@/assets/cyark/page-34.jpg.asset.json";
+import cy35 from "@/assets/cyark/page-35.jpg.asset.json";
+import cy36 from "@/assets/cyark/page-36.jpg.asset.json";
+import cy37 from "@/assets/cyark/page-37.jpg.asset.json";
+import cy38 from "@/assets/cyark/page-38.jpg.asset.json";
+import cy39 from "@/assets/cyark/page-39.jpg.asset.json";
+import cy40 from "@/assets/cyark/page-40.jpg.asset.json";
+import cy41 from "@/assets/cyark/page-41.jpg.asset.json";
+import cy42 from "@/assets/cyark/page-42.jpg.asset.json";
+import cy43 from "@/assets/cyark/page-43.jpg.asset.json";
+import cy44 from "@/assets/cyark/page-44.jpg.asset.json";
+import cy45 from "@/assets/cyark/page-45.jpg.asset.json";
+import cy46 from "@/assets/cyark/page-46.jpg.asset.json";
+import cy47 from "@/assets/cyark/page-47.jpg.asset.json";
+import cy48 from "@/assets/cyark/page-48.jpg.asset.json";
+import cy49 from "@/assets/cyark/page-49.jpg.asset.json";
+import cy50 from "@/assets/cyark/page-50.jpg.asset.json";
+import cy51 from "@/assets/cyark/page-51.jpg.asset.json";
+import cy52 from "@/assets/cyark/page-52.jpg.asset.json";
+import cy53 from "@/assets/cyark/page-53.jpg.asset.json";
+import cy54 from "@/assets/cyark/page-54.jpg.asset.json";
+import cy55 from "@/assets/cyark/page-55.jpg.asset.json";
+import cy56 from "@/assets/cyark/page-56.jpg.asset.json";
+import cy57 from "@/assets/cyark/page-57.jpg.asset.json";
+import cy58 from "@/assets/cyark/page-58.jpg.asset.json";
+import cy59 from "@/assets/cyark/page-59.jpg.asset.json";
+import cy60 from "@/assets/cyark/page-60.jpg.asset.json";
+import cy61 from "@/assets/cyark/page-61.jpg.asset.json";
+import cy62 from "@/assets/cyark/page-62.jpg.asset.json";
+import cy63 from "@/assets/cyark/page-63.jpg.asset.json";
+import cy64 from "@/assets/cyark/page-64.jpg.asset.json";
+import cy65 from "@/assets/cyark/page-65.jpg.asset.json";
+import cy66 from "@/assets/cyark/page-66.jpg.asset.json";
+import cy67 from "@/assets/cyark/page-67.jpg.asset.json";
+import cy68 from "@/assets/cyark/page-68.jpg.asset.json";
+import cy69 from "@/assets/cyark/page-69.jpg.asset.json";
+import cy70 from "@/assets/cyark/page-70.jpg.asset.json";
+import cy71 from "@/assets/cyark/page-71.jpg.asset.json";
+import cy72 from "@/assets/cyark/page-72.jpg.asset.json";
+import cy73 from "@/assets/cyark/page-73.jpg.asset.json";
+import cy74 from "@/assets/cyark/page-74.jpg.asset.json";
+import cy75 from "@/assets/cyark/page-75.jpg.asset.json";
+import cy76 from "@/assets/cyark/page-76.jpg.asset.json";
+import cy77 from "@/assets/cyark/page-77.jpg.asset.json";
+import cy78 from "@/assets/cyark/page-78.jpg.asset.json";
+import cy79 from "@/assets/cyark/page-79.jpg.asset.json";
+import cy80 from "@/assets/cyark/page-80.jpg.asset.json";
+
+const cyarkPages = [cy01, cy02, cy03, cy04, cy05, cy06, cy07, cy08, cy09, cy10, cy11, cy12, cy13, cy14, cy15, cy16, cy17, cy18, cy19, cy20, cy21, cy22, cy23, cy24, cy25, cy26, cy27, cy28, cy29, cy30, cy31, cy32, cy33, cy34, cy35, cy36, cy37, cy38, cy39, cy40, cy41, cy42, cy43, cy44, cy45, cy46, cy47, cy48, cy49, cy50, cy51, cy52, cy53, cy54, cy55, cy56, cy57, cy58, cy59, cy60, cy61, cy62, cy63, cy64, cy65, cy66, cy67, cy68, cy69, cy70, cy71, cy72, cy73, cy74, cy75, cy76, cy77, cy78, cy79, cy80].map((s, i) => ({ url: s.url, label: `Page ${i + 1}` }));
+
 
 const appEvalRubricPages = [appEvalRubric1, appEvalRubric2, appEvalRubric3, appEvalRubric4].map(
   (s, i) => ({ url: s.url, label: `Rubric page ${i + 1}` }),
@@ -373,6 +456,31 @@ function CaseStudyPage() {
                           <img
                             src={p.url}
                             alt={`App Evaluation Tool — ${p.label}`}
+                            loading="lazy"
+                            className="block h-auto w-full"
+                          />
+                          <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                            {p.label}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Block>
+            ) : project.slug === "cyark-formative-evaluation" ? (
+              <Block id="screenshots" title="Final Report">
+                <p className="text-sm text-muted-foreground">
+                  Full CyArk Tapestry formative evaluation report.
+                </p>
+                <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface/60 shadow-sm">
+                  <div className="max-h-[70vh] overflow-y-auto md:max-h-[640px]">
+                    <div className="flex flex-col gap-6 p-4 md:p-6">
+                      {cyarkPages.map((p, i) => (
+                        <figure key={i} className="overflow-hidden rounded-md border border-border bg-white">
+                          <img
+                            src={p.url}
+                            alt={`CyArk report — ${p.label}`}
                             loading="lazy"
                             className="block h-auto w-full"
                           />
