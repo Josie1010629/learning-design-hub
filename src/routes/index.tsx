@@ -148,8 +148,12 @@ function HomePage() {
         </div>
       </section>
 
+      {/* SKILLS */}
+      <SkillsSection />
+
       {/* CONTACT */}
-      <section id="contact" className="bg-background py-20 md:py-28">
+      <section id="contact" className="bg-[color:var(--color-sage)] py-20 md:py-28">
+
         <div className="container-narrow">
           <div className="mx-auto max-w-2xl text-center">
             <p className="eyebrow">Contact</p>
