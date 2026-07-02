@@ -50,6 +50,14 @@ import cpSlide16 from "@/assets/copal/slide-16.jpg.asset.json";
 import cpSlide17 from "@/assets/copal/slide-17.jpg.asset.json";
 import cpSlide18 from "@/assets/copal/slide-18.jpg.asset.json";
 import appEvalPoster from "@/assets/app-evaluation/slide-1.jpg.asset.json";
+import appEvalRubric1 from "@/assets/app-evaluation/rubric-1.png.asset.json";
+import appEvalRubric2 from "@/assets/app-evaluation/rubric-2.png.asset.json";
+import appEvalRubric3 from "@/assets/app-evaluation/rubric-3.png.asset.json";
+import appEvalRubric4 from "@/assets/app-evaluation/rubric-4.png.asset.json";
+
+const appEvalRubricPages = [appEvalRubric1, appEvalRubric2, appEvalRubric3, appEvalRubric4].map(
+  (s, i) => ({ url: s.url, label: `Rubric page ${i + 1}` }),
+);
 
 const textbookPages = [
   { url: page1.url, label: "Page 1" },
@@ -343,7 +351,7 @@ function CaseStudyPage() {
             ) : project.slug === "app-evaluation-tool" ? (
               <Block id="screenshots" title="Screenshots & Demo">
                 <p className="text-sm text-muted-foreground">
-                  Poster presented at the London International Conference on Inclusive Education.
+                  Poster presented at the London International Conference on Inclusive Education, followed by the evaluation rubric.
                 </p>
                 <figure className="mt-5 overflow-hidden rounded-xl border border-border bg-white shadow-sm">
                   <img
@@ -356,6 +364,26 @@ function CaseStudyPage() {
                     LICIE Conference Poster
                   </figcaption>
                 </figure>
+
+                <div className="mt-6 overflow-hidden rounded-xl border border-border bg-surface/60 shadow-sm">
+                  <div className="max-h-[70vh] overflow-y-auto md:max-h-[640px]">
+                    <div className="flex flex-col gap-6 p-4 md:p-6">
+                      {appEvalRubricPages.map((p, i) => (
+                        <figure key={i} className="overflow-hidden rounded-md border border-border bg-white">
+                          <img
+                            src={p.url}
+                            alt={`App Evaluation Tool — ${p.label}`}
+                            loading="lazy"
+                            className="block h-auto w-full"
+                          />
+                          <figcaption className="border-t border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
+                            {p.label}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </Block>
             ) : (
               <Block id="screenshots" title="Screenshots & Demo">
